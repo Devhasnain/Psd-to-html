@@ -1,0 +1,190 @@
+.parent-div {
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.nav-link {
+  color: white !important;
+}
+.search-div {
+  background-color: transparent;
+  border: solid #0adab9 2px;
+  border-radius: 20px;
+}
+.search-div input {
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: end;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.get-in-touch {
+  background-color: #0adab9;
+  color: black;
+  border: none;
+  outline: none;
+  width: 35%;
+  font-weight: 650;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #0adab9;
+}
+.get-in-touch:hover {
+  transition: 0.3s;
+  box-shadow: 0 0 20px #0adab9;
+}
+svg {
+  color: white;
+  transition: 0.3s;
+}
+svg:hover {
+  transition: 0.3s;
+  color: #0adab9;
+}
+.hero-content {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.img-div {
+  position: relative;
+  z-index: 1;
+}
+.img-div::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  bottom: 10%;
+  right: -10%;
+  width: 115%;
+  height: 76%;
+  background-image: linear-gradient(to top right, #0adab9,rgba(14, 1, 41,1.90));
+  border-radius: 50%;
+  z-index: -1;
+}
+.img-div::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 90%;
+    height: 90%;
+    background-image: url(./images/bg-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(35deg) translateY(160px) translateX(-227px);
+    scale: -1;
+}
+.main-img{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 100%;
+    height: 100%;
+}
+.hero-heading{
+    position: relative;
+}
+.hero-heading::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    height: 8%;
+    background-image: linear-gradient(to left,rgba(14, 1, 59, 0.5),rgb(255, 179, 0));
+    transform: translateY(-45px);
+}
+.hero-heading{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.hero-heading::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    height:70px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left,#0adab9,rgba(15, 0, 42,0.4));
+    transform: translateY(-45px) rotate(250deg);
+    opacity: 50%;
+}
+.hero-paragraph{
+    position: relative;
+}
+.hero-paragraph::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 3%;
+    height: 18vh;
+    background-image: linear-gradient(to bottom,rgba(13, 2, 51, 0.1),rgb(255, 0, 98));
+    transform: translateY(-40px);
+}
+.hero-paragraph::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 37vh;
+    background: transparent;
+    border-right: solid rgb(255, 179, 0) 10px;
+    border-bottom: solid rgb(255, 179, 0) 10px;
+    border-radius: 110px;
+    transform: translateX(-350px);
+}
+.content-div{
+    position: relative;
+}
+.content-div::after{
+    width: 50%;
+    height:50%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    background-image: url('./images/bg-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(200px) translateX(-90px);
+}
+.content-div::before{
+    width: 58%;
+    height: 59%;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    content: "";
+    background-image: url(./images/BG-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(186px) translateX(73px);
+}
+.digital{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 57%;
+    height: 23%;
+    background-image: url(./images/bg-4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 96px 0px;
+    display: flex;
+    align-items: center;
+    transform: translateX(101px) translateY(46px);
+}
